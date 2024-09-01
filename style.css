@@ -1,0 +1,737 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  font-family: "QuickSand", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  background-color: #000;
+  padding: 2rem 12rem;
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+}
+
+.main-list-items {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 70%;
+  text-align: center;
+  gap: 5%;
+  font-size: 1.5rem;
+  color: rgba(255, 255, 255, 0.7);
+  font-weight: 900;
+}
+
+.selected {
+  color: #ff8b38;
+}
+
+.main-section {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-image: url("images/banner.jpg");
+  background-size: cover;
+  height: 70vh;
+  padding: 3rem;
+}
+
+.axit-information {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.axit-information img {
+  width: 10r;
+}
+
+.axit-information h2 {
+  color: #fff;
+  font-size: 3rem;
+  font-weight: 400;
+}
+
+.axit-information hr {
+  width: 6rem;
+  color: #fff;
+}
+
+.axit-information p {
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+.axit-information button {
+  width: 40%;
+  height: 5rem;
+  background-color: transparent;
+  border: none;
+  letter-spacing: 0.1rem;
+  color: #fff;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: bold;
+  border: 1px solid #fff;
+}
+
+.free-trial-form {
+  border-radius: 0.4rem;
+  overflow: hidden;
+}
+
+.free-trial-form .form-title {
+  font-weight: bolder;
+  font-size: 2rem;
+  background-color: #f5f5f5;
+  text-align: center;
+  padding: 2rem;
+}
+
+.free-trial-form .form-title span {
+  color: #ff8b38;
+}
+
+.input-group {
+  position: relative;
+}
+
+.input-group input {
+  width: 100%;
+  height: 5rem;
+  padding: 1rem 1rem 1rem 3rem;
+  background-color: #fff;
+  border: none;
+}
+
+.input-group i {
+  font-size: 1.2rem;
+  position: absolute;
+  color: #555;
+  top: 50%;
+  left: 1rem;
+  transform: translateY(-50%);
+}
+
+.free-trial-form button {
+  width: 100%;
+  height: 5rem;
+  border: none;
+  letter-spacing: 0.1rem;
+  background-color: #ff8b38;
+  color: #fff;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.social-media {
+  padding: 3rem 25rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.social-media .section-info {
+  width: 40rem;
+}
+
+.social-media h2 {
+  font-size: 2rem;
+}
+.social-media p {
+  font-size: 1.5rem;
+  color: #86878b;
+}
+
+.social-media-links {
+  display: flex;
+  width: 60rem;
+  justify-content: space-around;
+}
+
+.social-media-link {
+  color: #cccccc;
+  font-size: 1.5rem;
+}
+
+.tabs-section {
+  display: flex;
+  background-color: #f5f5f5;
+  padding: 12rem;
+  justify-content: center;
+  gap: 20rem;
+  /* align-items: center; */
+  text-align: center;
+}
+
+.tabs-choices-list {
+  display: flex;
+  list-style: none;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.tab-choice {
+  width: 11.2rem;
+  height: 11.2rem;
+  line-height: 11.2rem;
+  font-size: 2rem;
+  text-align: center;
+  background-color: #ff8b38;
+  color: #fff;
+}
+
+.tab-choice:nth-of-type(2),
+.tab-choice:nth-of-type(3) {
+  background-color: #333333;
+}
+
+.tab-info {
+  display: flex;
+  width: 50%;
+}
+
+.tab-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 70%;
+}
+
+.tab-details .tab-title {
+  font-size: 2rem;
+  text-align: left;
+}
+
+.tab-details p {
+  font-size: 1.4rem;
+  color: #86878b;
+  text-align: left;
+}
+
+.tab-details button {
+  width: 10rem;
+  height: 5rem;
+  border: none;
+  letter-spacing: 0.1rem;
+  background-color: #ff8b38;
+  color: #fff;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-radius: 0.3rem;
+}
+
+.sub-list-section,
+.standard-picture-section {
+  display: flex;
+  background-color: #fff;
+  padding: 12rem 20rem;
+  justify-content: center;
+  gap: 20rem;
+  /* align-items: center; */
+}
+
+.standard-picture-section {
+  background-color: #f5f5f5;
+}
+
+.sub-list-section-details,
+.standard-picture-section-details {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.sub-list-section-details h1,
+.standard-picture-section-details h1 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.sub-list-section-details hr,
+.standard-picture-section-details hr {
+  color: #ff8b38;
+  width: 6rem;
+}
+
+.sub-list-section-details p,
+.standard-picture-section-details p {
+  font-size: 1.5rem;
+  color: #86878b;
+}
+
+.sub-list-items,
+.standard-picture-list-items {
+  display: flex;
+  list-style: none;
+  flex-direction: column;
+  gap: 6rem;
+}
+
+.sub-list-item,
+.standard-picture-list-item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.sub-list-item i,
+.standard-picture-list-item i {
+  width: 5rem;
+  height: 5rem;
+  text-align: center;
+  line-height: 5rem;
+  font-size: 2rem;
+  color: #ff8b38;
+  border: 1px solid #ff8b38;
+  border-radius: 50%;
+}
+
+.sub-list-item-details,
+.standard-picture-list-item-details {
+  width: 80%;
+}
+
+.sub-list-item-details h3,
+.standard-picture-list-item-details h3 {
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.features-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 12rem 20rem;
+}
+
+.features-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+
+.features-header h1 {
+  font-family: "Raleway", sans-serif;
+  font-size: 3rem;
+  font-weight: 400;
+}
+
+.features-header hr {
+  width: 6rem;
+  color: #ff8b38;
+}
+
+.features-header p {
+  font-size: 1.5rem;
+  color: #86878b;
+  margin-bottom: 3rem;
+}
+
+.features {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.feature {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.feature i {
+  font-size: 3rem;
+  width: 6rem;
+  height: 6rem;
+  line-height: 6rem;
+  border: 1px solid #ff8b38;
+  color: #ff8b38;
+  border-radius: 50%;
+}
+
+.feature h1 {
+  font-size: 2rem;
+}
+
+.feature p {
+  font-size: 1.5rem;
+  color: #86878b;
+}
+
+.pricing-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 12rem 10rem;
+  background-color: #f5f5f5;
+}
+
+.pricing-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  padding: 2rem 0;
+}
+
+.pricing-header h1 {
+  font-family: "Raleway", sans-serif;
+  font-size: 3rem;
+  font-weight: 400;
+}
+
+.pricing-header hr {
+  width: 6rem;
+  color: #ff8b38;
+}
+
+.pricing-header p {
+  font-size: 1.5rem;
+  color: #86878b;
+  margin-bottom: 3rem;
+}
+
+.pricing-options {
+  display: flex;
+  padding: 5rem 10rem;
+  text-align: center;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.pricing-option {
+  width: 35rem;
+}
+
+.pricing-option-info {
+  border-bottom: 0.4rem solid #ff8b38;
+}
+
+.pricing-option h1 {
+  color: #fff;
+  font-size: 2.5rem;
+  padding: 1.5rem 0;
+  background-color: #333333;
+  border-bottom: 1px solid #fff;
+}
+
+.pricing-option .pricing {
+  padding: 0.5rem;
+  background-color: #333333;
+}
+
+.pricing-option .pricing h2 {
+  font-size: 6rem;
+  color: #fff;
+}
+
+.pricing-option .pricing h2 span {
+  font-size: 4rem;
+}
+
+.pricing-option .pricing .payment-period {
+  display: block;
+  color: rgba(255, 255, 255, 0.5);
+  font-style: italic;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-size: 1.4rem;
+}
+
+.pricing-option.popular .pricing-option-info {
+  border-bottom: none;
+}
+
+.pricing-option.popular .badge {
+  text-transform: uppercase;
+  font-size: 2rem;
+  padding: 0.8rem;
+  width: 100%;
+  background-color: #ff8b38;
+  color: #fff;
+}
+
+.option-features {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+}
+
+.option-features li {
+  color: #86878b;
+  padding: 1.6rem 0;
+  border-bottom: 0.1rem solid #f5f5f5;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1.8rem;
+}
+
+.reviews-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 8em 20rem;
+}
+
+.reviews-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+
+.reviews-header h1 {
+  font-family: "Raleway", sans-serif;
+  font-size: 3rem;
+  font-weight: 400;
+}
+
+.reviews-header hr {
+  width: 6rem;
+  color: #ff8b38;
+}
+
+.reviews-header p {
+  font-size: 1.5rem;
+  color: #86878b;
+  margin-bottom: 3rem;
+}
+
+.reviews {
+  display: flex;
+  width: 100%;
+  padding: 12rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.reviews .review {
+  width: 28rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2rem;
+}
+
+.reviews .review .review-content {
+  background-color: #f5f5f5;
+  color: #86878b;
+  font-size: 1.5rem;
+  padding: 1rem;
+  position: relative;
+}
+
+.reviews .review .review-content::before {
+  position: absolute;
+  content: "";
+  border-width: 1.5rem;
+  border-style: solid;
+  border-color: #f5f5f5 transparent transparent transparent;
+  bottom: -3rem;
+  left: 2rem;
+}
+
+.reviews .reviewer-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.reviews .reviewer-info .reviewer-details h3 {
+  font-size: 2rem;
+}
+
+.reviews .reviewer-info .reviewer-details h6 {
+  font-size: 1.5rem;
+  color: #86878b;
+}
+
+.design-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem 10rem;
+  background-image: url("images/news.jpg");
+  background-size: cover;
+  color: #fff;
+}
+
+.design-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  padding: 2rem 0;
+}
+
+.design-header h1 {
+  font-size: 3rem;
+  font-weight: 400;
+}
+
+.design-header hr {
+  width: 6rem;
+  color: #fff;
+}
+
+.design-header p {
+  font-size: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+.design-header button {
+  width: 40%;
+  height: 5rem;
+  background-color: transparent;
+  border: none;
+  letter-spacing: 0.1rem;
+  color: #fff;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: bold;
+  border: 1px solid #fff;
+}
+
+.contact-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 8em 20rem;
+}
+
+.contact-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+
+.contact-header h1 {
+  font-size: 3rem;
+  font-weight: 400;
+}
+
+.contact-header hr {
+  width: 6rem;
+  color: #ff8b38;
+}
+
+.contact-header p {
+  font-size: 1.5rem;
+  color: #86878b;
+  margin-bottom: 3rem;
+}
+
+.contact-section form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.contact-section form .inputs {
+  display: flex;
+  width: 100rem;
+  justify-content: center;
+  gap: 3rem;
+}
+
+.contact-section form .inputs-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-section form .inputs-group input {
+  width: 40rem;
+  height: 5rem;
+  padding: 1rem 1rem 1rem 3rem;
+  background-color: #fff;
+  border: none;
+  border-bottom: 1px solid #d6d6d6;
+}
+
+.contact-section form .inputs textarea {
+  width: 40rem;
+  border-width: 0 0 1px 0;
+  border-bottom: 1px solid #d6d6d6;
+}
+
+.contact-section form button {
+  width: 16rem;
+  height: 5rem;
+  border: none;
+  letter-spacing: 0.1rem;
+  background-color: #ff8b38;
+  color: #fff;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-radius: 0.3rem;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  background-color: #000;
+  justify-content: center;
+  align-items: center;
+  height: 12rem;
+}
+
+footer .social-media-links {
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+footer .social-media-link {
+  color: #fff;
+}
+
+footer p {
+  font-size: 1rem;
+  color: #86878b;
+}
+
+footer p:nth-of-type(1) {
+  margin-top: 0.6rem;
+}
